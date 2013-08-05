@@ -1,0 +1,164 @@
+<?php
+define('IN_SK',true);
+require ('includes/init.php');
+require ('control/seo.php');
+$pageName = "Discover";
+include "header.php";
+$lang = "en";
+
+?>
+<link rel="stylesheet" href="css/discover.css">
+<?php
+$pnum = "3";
+$psnum = "6";
+include "topnav_page.php";
+?>
+<div class="discover wrap mdcont">
+    <h1 class="entertainment_tit">Entertainment</h1>
+    <div class="mdbox fn-clear">
+        <ul>
+            <li class="co1">
+                <div class="ptn">
+                    <div class="hx2"></div>
+                    </br>
+                    <p>As the new landmark of the Bund, Bund 22 has been witnessing all kinds of luxurious fashion shows and art feasts. This is a place to find truth of beauty, to inspire passion for life and more importantly, to realizing the true self.</p>
+                </div>
+            </li>
+            
+           <?php 
+         	   	$where = " WHERE type_id = '3'";
+				$param = "discover_id, title_".$lang." as name".", description_".$lang." as description ".", hours, contact, telephone, website, photo";
+				$order = " order by orderby";
+				$myquery = $db->query("SELECT ".$param." FROM ".$ros->table('discover').$where.$order);
+				while($thisB = $db->fetch_array($myquery)) {
+            ?>
+            <li class="co1">
+                <div class="m1">
+                    <div class="img"><img src="<?php echo $file_dir."/discover/".$thisB['photo']; ?>" alt="" width="332" height="166"></div>
+                    <div class="ptxt">
+                        <h3><?php echo $thisB['name']; ?></h3>
+                        <p><?php echo  cut_str($thisB['description'],250); ?></p>
+                        <p class="more">
+                            <a href="details.php?id=<?php echo $thisB['discover_id']; ?>" class="moredetails">More Details</a>
+                            <a href="loginfo.php?order=reservation" class="moredetails">Reservation</a>
+                        </p>
+                        <div class="arcula"></div>
+                    </div>
+                </div>
+            </li>
+            <?php 
+            }
+			?>
+            
+            
+            <!-- 
+            <li class="co1">
+                <div class="m1">
+                    <div class="img"><img src="images/update/dr_02.jpg" alt="" width="333" height="166"></div>
+                    <div class="ptxt">
+                        <h3> Aolisha Imperial - Customized Design Wedding Dress</h3>
+                        <p><span class="h">Business Hours:</span><span class="r">Daily, 11:00am-10:00pm</span></p>
+                        <p><span class="h">Contact: </span><span class="r"> </span></p>
+                        <p><span class="h">Telephone: </span><span class="r"> </span></p>
+                        <p><span class="h">Website: </span><span class="r"> </span></p>
+                        <p class="more">
+                            <a href="details.php" class="moredetails">More Details</a>
+                            <a href="loginfo.php?order=reservation" class="moredetails">Reservation</a>
+                        </p>
+                        <div class="arcula"></div>
+                    </div>
+                </div>
+            </li>
+            <li class="co1">
+                <div class="m1">
+                    <div class="img"><img src="images/update/dr_02.jpg" alt="" width="333" height="166"></div>
+                    <div class="ptxt">
+                        <h3>Tina Fu - Haute Couture Fashion</h3>
+                        <p><span class="h">Business Hours:</span><span class="r">Daily, 11:00am-10:00pm</span></p>
+                        <p><span class="h">Contact: </span><span class="r"> </span></p>
+                        <p><span class="h">Telephone: </span><span class="r"> </span></p>
+                        <p><span class="h">Website: </span><span class="r"> </span></p>
+                        <p class="more">
+                            <a href="details.php" class="moredetails">More Details</a>
+                            <a href="loginfo.php?order=reservation" class="moredetails">Reservation</a>
+                        </p>
+                        <div class="arcula"></div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="m1">
+                    <div class="img"><img src="images/update/dr_02.jpg" alt="" width="333" height="166"></div>
+                    <div class="ptxt">
+                        <h3>Eleganza Uomo - Bespoke Tailor</h3>
+                        <p><span class="h">Business Hours:</span><span class="r">Daily, 11:00am-10:00pm</span></p>
+                        <p><span class="h">Contact: </span><span class="r"> </span></p>
+                        <p><span class="h">Telephone: </span><span class="r"> </span></p>
+                        <p><span class="h">Website: </span><span class="r"> </span></p>
+                        <p class="more">
+                            <a href="details.php" class="moredetails">More Details</a>
+                            <a href="loginfo.php?order=reservation" class="moredetails">Reservation</a>
+                        </p>
+                        <div class="arcula"></div>
+                    </div>
+                </div>
+            </li>
+            <li class="co1">
+                <div class="m1">
+                    <div class="img"><img src="images/update/dr_02.jpg" alt="" width="333" height="166"></div>
+                    <div class="ptxt">
+                        <h3>Black Magic - Handcraft Chocolate Shop</h3>
+                        <p><span class="h">Business Hours:</span><span class="r">Daily, 11:00am-10:00pm</span></p>
+                        <p><span class="h">Contact: </span><span class="r"> </span></p>
+                        <p><span class="h">Telephone: </span><span class="r"> </span></p>
+                        <p><span class="h">Website: </span><span class="r"> </span></p>
+                        <p class="more">
+                            <a href="details.php" class="moredetails">More Details</a>
+                            <a href="javascript:;">Reservation</a>
+                        </p>
+                        <div class="arcula"></div>
+                    </div>
+                </div>
+            </li>
+            <li class="co1">
+                <div class="m1">
+                    <div class="img"><img src="images/update/dr_02.jpg" alt="" width="333" height="166"></div>
+                    <div class="ptxt">
+                        <h3>Sheme - Customade Women Shoe</h3>
+                        <p><span class="h">Business Hours:</span><span class="r">Daily, 11:00am-10:00pm</span></p>
+                        <p><span class="h">Contact: </span><span class="r"> </span></p>
+                        <p><span class="h">Telephone: </span><span class="r"> </span></p>
+                        <p><span class="h">Website: </span><span class="r"> </span></p>
+                        <p class="more">
+                            <a href="details.php" class="moredetails">More Details</a>
+                            <a href="loginfo.php?order=reservation" class="moredetails">Reservation</a>
+                        </p>
+                        <div class="arcula"></div>
+                    </div>
+                </div>
+            </li>
+            <li class="co1">
+                <div class="m1">
+                    <div class="img"><img src="images/update/dr_02.jpg" alt="" width="333" height="166"></div>
+                    <div class="ptxt">
+                        <h3>Henkell & Co - Champaigne Concept Shop</h3>
+                        <p><span class="h">Business Hours:</span><span class="r">Daily, 11:00am-10:00pm</span></p>
+                        <p><span class="h">Contact: </span><span class="r"> </span></p>
+                        <p><span class="h">Telephone: </span><span class="r"> </span></p>
+                        <p><span class="h">Website: </span><span class="r"> </span></p>
+                        <p class="more">
+                            <a href="details.php" class="moredetails">More Details</a>
+                            <a href="javascript:;">Reservation</a>
+                        </p>
+                        <div class="arcula"></div>
+                    </div>
+                </div>
+            </li> -->
+        </ul>
+    </div>
+</div>
+<?php
+include "footer.php";
+?>
+</body>
+</html>

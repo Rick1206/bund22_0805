@@ -1,0 +1,201 @@
+.discover{
+
+}
+.discover .mdbox{
+
+}
+.discover .mdbox ul li{
+    width: 333px;
+    height: 333px;
+    margin-right: 1px;
+    margin-bottom: 1px;
+    float: left;
+    _display:inline;
+    overflow: hidden;
+}
+.discover .mdbox ul li p.h2{
+    color: #000;
+    font-size: 12px;
+    margin: 6px 0;
+}
+.discover .mdbox ul li .ptn{
+    background-color: #f6f6f6!important;
+    padding: 90px 20px;
+    height: 100%;
+}
+.discover .mdbox ul li .ptn .next{
+    width: 55px;
+    height: 33px;
+    display: block;
+    background: url(../images/arrow.jpg) no-repeat;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.discover .mdbox ul li .ptn .ptnovf{
+    height: 100px;
+    overflow: hidden;
+}
+.discover .mdbox ul li .ptn .hx{
+    width: 117px;
+    height: 51px;
+    background: url(../images/fs.jpg) no-repeat -463px -438px;
+    margin: 0 auto;
+}
+.discover .mdbox ul li .ptn .ti{
+    width: 180px;
+    margin: 0 auto;
+}
+.discover .mdbox ul li .ptn .hx1{
+    width: 170px;
+    height: 51px;
+    background: url(../images/fs.jpg) no-repeat -409px -539px;
+    margin: 0 auto;
+}
+.discover .mdbox ul li .ptn .hx2{
+    width: 242px;
+    height: 51px;
+    background: url(../images/fs.jpg) no-repeat -366px -333px;
+    margin: 0 auto;
+}
+.discover .mdbox ul li .m1{
+    width: 100%;
+    height: 100%;
+}
+.discover .mdbox ul li .m1 .img{
+    position: relative;
+    z-index: 1;
+}
+.discover .mdbox ul li .m1 .img img{
+    display: block;
+}
+.discover .mdbox ul li .m1 .ptxt{
+    position: relative;
+    z-index: 2;
+    padding:0 20px;
+}
+.discover .mdbox ul li .m1 h3{
+    font-size: 12px;
+    font-weight: bold;
+    padding: 10px 0;
+}
+.discover .mdbox ul li a:hover{
+    text-decoration: none;
+}
+.discover .mdbox ul li .m1 .arcula{
+    position: absolute;
+    width: 19px;
+    height: 10px;
+    top: -9px;
+    left:60px;
+    background: url(../images/arcula.gif) no-repeat;
+}
+.discover .mdbox ul li .m1 span.h{
+    color: #000;
+}
+.discover .mdbox ul li .m1 p.more{
+    padding: 10px 0;
+}
+.discover .mdbox ul li .m1 p.more a{
+    background-color: #F6F6F6;
+    padding: 0 10px;
+    line-height: 20px;
+    zoom: 1 ;
+    display: inline-block;
+}
+.discover .mdbox ul li .m1 p.more a:hover{
+    text-decoration: none;
+    background-color: #000;
+    color: #ffffff;
+}
+.discover .mdbox ul li .m2{
+    width: 100%;
+    height: 100%;
+}
+.discover .mdbox ul li .m2 img{
+    float: left;
+    width: 166px;
+    position: relative;
+    z-index: 1;
+}
+.discover .mdbox ul li .m2 .ptxt{
+    float: left;
+    width: 140px;
+    padding:10px 13px;
+    position: relative;
+    z-index: 2;
+}
+.discover .mdbox ul li .m2 .arcula{
+    position: absolute;
+    width: 10px;
+    height:19px;
+    left: -9px;
+    top:30px;
+    background: url(../images/arcula2.gif) no-repeat;
+}
+.discover .mdbox ul li.co1{
+    background-color: #fafafa;
+}
+.discover .mdbox ul li.co2{
+    background-color: #fafafa;
+}
+
+.discover .arcula2{
+    padding-left: 10px;
+    background: url(../images/icon_i.jpg) no-repeat -35px -17px;
+    width: 10px;
+    height: 30px;
+}
+.discover .sublist{
+    line-height: 30px;
+}
+.discover .sublist a{
+    padding: 0 10px;
+}
+.discover .sublist a.on{
+    color: #000;
+}
+.time{
+    margin-top: -5px;
+}
+.mdcont .entertainment_tit{
+    background-position: 0 -316px;
+}
+.mon1,.mon2,.mon3,.mon4,.mon5,.mon6,.mon7,.mon8,.mon9,.mon10,.mon11,.mon12{
+    background: url(../images/mon.jpg) no-repeat;
+}
+.mon1{
+    background-position: 0 -1100px;
+}
+.mon2{
+    background-position: 0 -1000px;
+}
+.mon3{
+    background-position: 0 -900px;
+}
+.mon4{
+    background-position: 0 -800px;
+}
+.mon5{
+    background-position: 0 -700px;
+}
+.mon6{
+    background-position: 0 -600px;
+}
+.mon7{
+    background-position: 0 -500px;
+}
+.mon8{
+    background-position: 0 -400px;
+}
+.mon9{
+    background-position: 0 -300px;
+}
+.mon10{
+    background-position: 0 -200px;
+}
+.mon11{
+    background-position: 0 -100px;
+}
+.mon12{
+    background-position: 0 0;
+}

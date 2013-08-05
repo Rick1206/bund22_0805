@@ -1,0 +1,75 @@
+.banner{
+    height: 429px;
+    width: 1003px;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+}
+.banner ul{
+    list-style: none;
+    width: 100%;
+}
+.banner li{
+    width: 1003px;
+}
+.banner #JSimg img{
+    display: block;
+    width: 1003px;
+    height: 429px;
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+#page{
+    position: absolute;
+    z-index: 20;
+    bottom: 0px;
+    text-align: center;
+    width: 100%;
+    margin-right: 30px;
+}
+#page a{
+    display: inline-block;
+    *zoom:1;
+    width: 24px;
+    height: 24px;
+    background: url(../images/silde-nav.png) no-repeat;
+    color: #e8e8e8;
+    font-size: 40px;
+    text-decoration: none;
+    margin-left: 2px;
+    line-height: 1;
+}
+#page a.selected{
+    background-position: 0 -24px;
+    color: #545454;
+}
+.lastest{
+    width: 923px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px 40px 60px 40px;
+    overflow: hidden;
+}
+.lastest h1{
+    border-bottom: 1px solid #bfbfbf;
+    padding-bottom: 10px;
+}
+.lastest h1 i{
+    display: block;
+    background: url(../images/new_font.jpg) no-repeat;
+    background-position: 0 -78px;
+    width: 177px;
+    height: 25px;
+}
+.lastest li{
+    width: 205px;
+    float: left;
+    padding: 10px 0;
+    padding-right: 25px;
+}
+.lastest .m{
+    color: #ed1b23;
+    padding-right: 10px;
+    background: url(../images/db_arrows.gif) no-repeat;
+    background-position: 56px 6px;
+}
