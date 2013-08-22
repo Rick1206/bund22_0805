@@ -177,7 +177,10 @@ if(isset($_GET['action'])) {
 					  </td>
 					</tr>
 				</table>
-				<p style="padding-top:10px;"><input type="submit" class="but2" name="Submit" value="更新"><input type="button" name="rfd" value="刷新" class="but2" onclick="window.location.reload();"></p>
+				<p style="padding-top:10px;">
+					<input type="hidden" name="id" value="<?php echo $d_id; ?>" />
+					<input type="submit" class="but2" name="Submit" value="更新">
+					<input type="button" name="rfd" value="刷新" class="but2" onclick="window.location.reload();"></p>
 				</form>
 				</div>
 			</div>
