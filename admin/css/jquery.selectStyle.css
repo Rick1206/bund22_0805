@@ -1,0 +1,19 @@
+@charset "utf-8";
+.dropdown {outline:none;display:inline-block;*display:inline;*zoom:1;text-align:left;}
+.dropdown h4{cursor:default; text-indent:5px; margin:0; padding:0;}
+.dropdown * {-moz-user-select:none;}
+.dropdown h4.over {}
+.dropdown div {display:block; /*fix bug*/}
+.dropdown ul{position:absolute;display:none;margin:0;padding:0;clear:both;top:0;left:0;z-index:999999;}
+.dropdown ul li{text-indent:5px;margin:0;padding:0;list-style:none;display:block;cursor:default;}
+.dropdown ul li.over{}
+.dropselectbox {display:inline;}
+/* write you style here */
+.dropselectbox {background:#DDD url(../images/selectBg.png) repeat-x left top;}
+.dropdown h4{height:20px; font:12px/19px Arial, Helvetica, sans-serif; border:solid 1px #d1d1d1;background:url(../images/droparrow.gif) no-repeat right center;}
+.dropdown h4.over{border-color:#c0c0c0; background-image:url(../images/droparrowover.gif);}
+.dropdown h4.current{border-color:#bcbbbb;}
+.dropdown ul{border:1px solid #bcbbbb; background:#FFF;}
+.dropdown ul li{background:#FFF;height:20px;font:400 12px/19px Arial, Helvetica, sans-serif;}
+.dropdown ul li.over{background:#369; color:#FFF;}
+

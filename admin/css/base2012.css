@@ -1,0 +1,151 @@
+@charset "utf-8";
+
+/* 
+	@名称: base
+	@功能: 重设浏览器默认样式
+*/
+
+html{
+	color:#000;
+	overflow:-moz-scrollbars-vertical; /* 解决火狐有无滚动条跳转时抖动问题 */
+	-webkit-text-size-adjust: none; /* 解决chrome 下 12px字体问题 */
+}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,hr,button,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+	margin:0;padding:0;
+}
+
+body,button,input,select,textarea{
+	font:11px/1.5 Tahoma;
+}
+input,select,textarea{
+	font-size:100%;
+}
+
+table{
+	border-collapse:collapse;border-spacing:0;
+}
+
+/* IE bug fixed: th 不继承 text-align*/
+th{
+	text-align:inherit;
+}
+
+
+fieldset,img{
+	border:0;
+}
+
+/* ie6 7 8(q) bug 显示为行内表现 */
+iframe{
+	display:block;
+}
+
+/* 去掉 firefox 下此元素的边框 */
+abbr,acronym{
+	border:0;font-variant:normal;
+}
+
+/* 一致的 del 样式 */
+del {
+	text-decoration:line-through;
+}
+
+address,caption,cite,code,dfn,em,th,var {
+	font-style:normal;
+	font-weight:500;
+}
+
+/* 去掉列表前的标识, li 会继承 */
+ol,ul {
+	list-style:none;
+}
+
+/* 对齐是排版最重要的因素, 别让什么都居中 */
+caption,th {
+	text-align:left;
+}
+
+/* 来自yahoo, 让标题都自定义, 适应多个系统应用 */
+h1,h2,h3,h4,h5,h6 {
+	font-size:100%;
+	font-weight:500;
+}
+
+q:before,q:after {
+	content:'';
+}
+
+/* 统一上标和下标 */
+sup {
+	vertical-align:text-top;
+}
+sub {
+	vertical-align:text-bottom;
+}
+
+/* 让链接在 hover 状态下显示下划线  边框*/
+a{blr:expression(this.onFocus=this.blur() ); outline: none;}
+a:hover,a:visited{
+	color:#656565;
+	/*text-decoration:underline;*/
+}
+
+/* 默认不显示下划线，保持页面简洁 */
+ins,a {
+	text-decoration:none;
+}
+
+/* 清理浮动 */
+.fn-clear:after {
+	visibility:hidden;
+	display:block;
+	font-size:0;
+	content:" ";
+	clear:both;
+	height:0;
+}
+.fn-clear {
+	zoom:1; /* for IE6 IE7 */
+}
+
+body .fn-hide {
+	display:none;
+}
+.fn-left,.fn-right {
+	display:inline;
+}
+.fn-left {
+	float:left;
+}
+.fn-right {
+	float:right;
+}
+.wrap{width:1005px;margin:0 auto;}
+/* header */
+.header{width:100%;height:140px;background: #1b1b1b;overflow:hidden;}
+.header .logo1{color:#b1b0ac;padding: 57px 0 0 43px;}
+.header .logo2{color:#b1b0ac;padding: 32px 0 0 40px;position:relative;}
+.header .logo2 img{display:block;}
+.header .logo2 .user{position:absolute;right:10px;top:93px;}
+.header .logo2 .user a{color:#fefefe;height: 18px;display:inline-block;*zoom:1;background: url(../images/bg3.png) repeat-x 0 -45px;margin: 0 2px;padding:0 5px; }
+.header .logo2 s{width:20px;height:20px;display:block;background: url(../images/icn.png) no-repeat center -123px;position:absolute;right:10px;top:115px;cursor:pointer;}
+	/* nav */
+.header .nav{border-top:1px solid #333;margin-top:10px;}
+.header .nav li{float:left;padding: 0 12px;padding-top:5px;}
+.header .nav li a{color:#b1b0ab;display:block;height:25px;}
+.header .nav li a:hover{color:#fff;}
+.header .nav li .a-active{color:#fff;background: url(../images/icn.png) no-repeat center 14px; }
+/* content */
+body{background:#ecebe9 url(../images/bg.png) repeat-x 0 -510px;}
+/* footer */
+.footer{border-top:1px solid #cfcecc;background: #fff;width:100%;position: fixed;bottom:0;height:42px;_bottom:auto;_top: expression(eval(documentElement.scrollBottom+0));_position:absolute;z-index: 9999999;}
+.footer p{color:#6c6c6c;line-height: 41px}
+.footer p a{color:#646464;text-decoration:underline;}
+/* input style */
+.input01{background: url(../images/bg.png) no-repeat;width: 209px;height: 20px;padding-left:3px;display:inline-block;*display:inline;*zoom:1; position: relative;}
+.input01 input{background: url(../images/bg.png) repeat-x 0 -30px;height: 20px;width: 209px;border: 0;line-height: 18px;*position:relative;*margin-top:-1px;}
+.input01 .inputa{background: url(../images/bg.png) repeat-x 0 -30px;height: 20px;width: 209px;border: 0;line-height: 18px;*position:relative;*margin-top:-1px; display:block;}
+.input02{background: url(../images/icn.png) no-repeat 1px -334px;width: 20px;height: 20px;padding-left:3px;display:inline-block;*display:inline;*zoom:1;}
+.input02 input{height: 20px;width: 20px;border: 0;line-height: 18px;*position:relative;*margin-top:-1px;background:none;cursor:pointer;}
+input[type="radio"],input[type="checkbox"]{position:relative;top:2px;margin:0 2px;}
+textarea{border:1px solid #bfbfbf; background: #d7d7d7;}
