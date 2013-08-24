@@ -7,8 +7,6 @@ require ('includes/init.php');
 require ('control/press.php');
 $lang = "en";
 
-
-
 ?>
 <link rel="stylesheet" href="css/discover.css">
 <?php
@@ -85,76 +83,6 @@ include "topnav_page.php";
 				$mon--;
 			}
         	?>
-        	
-        	
-           <!--  <li class="co1">
-                <div class="ptn">
-                    <div class="ti">
-                        <img src="images/transparent.gif" alt="" width="180" height="100" style="background:url(images/fs.jpg) no-repeat -413px 11px;">
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="m1">
-                    <div class="img"><img src="images/update/dr_01.jpg" alt="" width="333" height="166"></div>
-                    <a href="details2.php" class="moredetails">
-                        <div class="ptxt">
-                            <p class="h2">THE BUND 22 Introduction</p>
-                            <p class="time">2012-12-05</p>
-                            <p>A Vitruvian woman comes to life in Benjamin Seroussi’s new fashion short, Divine Proportions, inspired by the disparate environments of a doctor’s office and a model casting session. <br>“I wanted to have a scientific approach to the character,” says the director. “When you have ...</p>
-                            <div class="arcula"></div>
-                        </div>
-                    </a>
-                </div>
-            </li>
-            <li class="co1">
-                <div class="m2">
-                    <div class="img"><img src="images/update/dt_02.jpg" alt="" width="166" height="333"></div>
-                    <a href="details2.php" class="moredetails">
-                        <div class="ptxt">
-                            <p class="h2">Adidas 2012 Launch Party</p>
-                            <p class="time">2012-12-05</p>
-                            <p>Saudi Arabian basketball players and Qatari swimmers feature in Brigitte Lacombe’s striking portraits of Arab women in sport. Commissioned by the Qatar Museums Authority, Brigitte and her sister, the documentary filmmaker Marian Lacombe, stayed at the pre-</p>
-                            <div class="arcula"></div>
-                        </div>
-                    </a>
-                </div>
-            </li>
-            
-            <li class="co1">
-                <div class="m2">
-                    <div class="img"><img src="images/update/dt_02.jpg" alt="" width="166" height="333"></div>
-                    <a href="details2.php" class="moredetails">
-                        <div class="ptxt">
-                            <p class="h2">Adidas 2012 Launch Party</p>
-                            <p class="time">2012-12-05</p>
-                            <p>Saudi Arabian basketball players and Qatari swimmers feature in Brigitte Lacombe’s striking portraits of Arab women in sport. Commissioned by the Qatar Museums Authority, Brigitte and her sister, the documentary filmmaker Marian Lacombe, stayed at the pre-</p>
-                            <div class="arcula"></div>
-                        </div>
-                    </a>
-                </div>
-            </li>
-            <li>
-                <div class="ptn">
-                    <div class="ti">
-                        <img src="images/transparent.gif" alt="" width="180" height="100" style="background:url(images/fs.jpg) no-repeat -410px -124px;">
-                    </div>
-                </div>
-            </li>
-            <li class="co1">
-                <div class="m1">
-                    <div class="img"><img src="images/update/dr_01.jpg" alt="" width="333" height="166"></div>
-                    <a href="details2.php" class="moredetails">
-                        <div class="ptxt">
-                            <p class="h2">THE BUND 22 Introduction</p>
-                            <p class="time">2012-12-05</p>
-                            <p>A Vitruvian woman comes to life in Benjamin Seroussi’s new fashion short, Divine Proportions, inspired by the disparate environments of a doctor’s office and a model casting session. <br>“I wanted to have a scientific approach to the character,” says the director. “When you have ...</p>
-                            <div class="arcula"></div>
-                        </div>
-                    </a>
-                </div>
-            </li> -->
-            <!--            ////-->
         </ul>
     </div>
 </div>

@@ -171,7 +171,7 @@ if(isset($_GET['action'])) {
 					</tbody>
 					<tr>
 					  <td height="25" class="page" id="page" colspan="4">
-					  <?php  echo page::page_num($all_date_num,$page_a,$page,'discover_photo.php?action=discover&type_id='.$d_id);?>
+					  <?php  echo page::page_num($all_date_num,$page_a,$page,'discover_photo.php?action=discover&d_id='.$d_id);?>
 					  </td>
 					</tr>
 				</table>

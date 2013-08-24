@@ -47,7 +47,8 @@ $did = $infoB['discover_id'];
         	<?php 
         		$phowhere = " WHERE discover_id = '".$did."'";
 				$phoparam = "*";
-				$phoquery = $db->query("SELECT ".$phoparam." FROM ".$ros->table('discover_photo').$phowhere);
+				$order = "ORDER BY orderby";
+				$phoquery = $db->query("SELECT ".$phoparam." FROM ".$ros->table('discover_photo').$phowhere.$order);
 				while($phoThisB = $db->fetch_array($phoquery)) {
 			?>
             <li><img src="<?php echo $file_dir."/discover_photo/".$phoThisB['photo']; ?>" alt="" width="750" height="500"></li>
