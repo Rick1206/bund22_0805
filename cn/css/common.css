@@ -592,3 +592,11 @@ html,body{
         background-color: #fff;
     }
 }
+
+.menu_b a.region{
+	color:#FFFFFF;
+}
+
+.menu_b a.region:hover{
+	color:#b0b0b0;
+}

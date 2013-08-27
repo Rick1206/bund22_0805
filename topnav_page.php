@@ -38,7 +38,7 @@
                             <a href="photo_gallery.php" class="tar nav7 <?php echo ($pnum =="7") ? "sel": "" ?>"><i class="gallery"></i>GALLERY</a>
                         </li>
                     </ul>
-                   <div style="position:absolute;top:28px;right:0;font-size:14px;color:#B1B1B1;"><a href="cn/<? echo $pagename_tp;?>">中</a></div>
+                   <div style="position:absolute;top:28px;right:0;font-size:14px;color:#ffffff;"><a class="region" href="cn/<? echo $pagename_tp;?>">中</a></div>
             </div>
         </div>
         <div class="fn-right fwm">
