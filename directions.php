@@ -19,7 +19,7 @@ include "topnav_page.php";
             <h2>Map & Directions</h2>
             <p class="c0">Location:</p>
             <p class="c0">22 Zhongshan Dong Er Road, Shanghai, China  <br>
-				+86 (21) 6320 1361<br>
+				<!-- +86 (21) 6320 1361<br> -->
                 +86 (21) 6320 1366          <br>
                 contact@bund22.com</p>
             <div class="route">
