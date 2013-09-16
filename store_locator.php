@@ -3,7 +3,7 @@
 define('IN_SK',true);
 require ('includes/init.php');
 require ('control/seo.php');
-$pageName = "Discover";
+$pageName = "Shopping";
 include "header.php";
 $lang = "en";
 

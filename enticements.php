@@ -3,7 +3,32 @@ define('IN_SK',true);
 require ('includes/init.php');
 require ('control/enticements.php');
 require ('control/seo.php');
-$pageName = "Enticements";
+
+if(isset($_GET['page'])){
+	switch ($_GET['page']) {
+		case 'Events':
+			$type = "1";
+			$psnum = "7";
+			$pageName = "Events";
+			break;
+		case 'Promotion':
+			$type = "2";
+			$psnum = "8";
+			$pageName = "Promotion";
+			break;
+		default:
+			$type = "1";
+			$psnum = "7";
+			$pageName = "Events";
+			break;
+	}
+}else{
+	$type = "";
+	$psnum = "11";
+	$pageName = "Enticements";
+}
+
+
 include "header.php";
 
 $lang = "en";
@@ -14,29 +39,7 @@ if(isset($_GET['id'])){
 	$id = "";
 }
 
-
-if(isset($_GET['page'])){
-	switch ($_GET['page']) {
-		case 'Events':
-			$type = "1";
-			$psnum = "7";
-			break;
-		case 'Promotion':
-			$type = "2";
-			$psnum = "8";
-			break;
-		default:
-			$type = "";
-			$psnum = "7";
-			break;
-	}
-}else{
-	$type = "";
-	$psnum = "11";
-}
-	
-	
-	$_enticement_type  = array('1' => "Events","2"=>"Promotion");		
+$_enticement_type  = array('1' => "Events","2"=>"Promotion");		
 ?>
 <link rel="stylesheet" href="css/discover.css">
 <?php

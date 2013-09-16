@@ -86,9 +86,9 @@ if(isset($_GET['action'])) {
 						<tr>
 							<td height="50"> <input type="checkbox" name="del_seo_a[]" id="del_seo_a" value="<?php echo $this_sql['page_id'];?>" /></td>
 							<td><?php echo $this_sql['pname'];?></td>
-							<td><?php echo $this_sql['ptitle'];?></td>
-							<td><?php echo $this_sql['pkeyword_cn'];?></td>
-							<td><?php echo $this_sql['pdescription_cn'];?></td>
+							<td><?php echo cut_str($this_sql['ptitle'],50);?></td>
+							<td><?php echo cut_str($this_sql['pkeyword_cn'],50);?></td>
+							<td><?php echo cut_str($this_sql['pdescription_cn'],50);?></td>
 							<td><a href="seo.php?action=seo&edit=<?php echo $this_sql['page_id'];?>"><img src="./images/modify.gif" width="16" height="16" border="0" alt="<?php echo $_L['edit'];?>" title="<?php echo $_L['edit'];?>" /></a></td>
 						</tr>
 						<?php
