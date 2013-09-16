@@ -40,7 +40,7 @@ include "topnav_page.php";
                     <div class="img"><img src="<?php echo $file_dir."/discover/".$thisB['photo']; ?>" alt="" width="332" height="166"></div>
                     <div class="ptxt">
                         <h3><?php echo $thisB['name']; ?></h3>
-                        <p><?php echo  cut_str($thisB['description'],280); ?></p>
+                        <p><?php echo  cut_str($thisB['description'],220); ?></p>
                        
                         <p class="more">
                             <a href="details.php?id=<?php echo $thisB['discover_id']; ?>" class="moredetails">More Details</a>

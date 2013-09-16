@@ -19,7 +19,7 @@ include "topnav_page.php";
             <h2>地图和方位</h2>
             <p class="c0">位置:</p>
             <p class="c0">黄浦区中山东二路 22号 <br>
-			+86 (21) 6320 1361<br>
+			<!-- +86 (21) 6320 1361<br> -->
               +86 (21) 6320 1366      <br>
                 contact@bund22.com</p>
             <div class="route">

@@ -39,8 +39,8 @@
 								<a href="photo_gallery.php" class="tar nav7 <?php echo ($pnum =="7") ? "sel": "" ?>"><i class="gallery" data-def="相 册"></i></a>
 							</li>
 						</ul>
-						<div style="position:absolute;top:28px;right:0;font-size:14px;color:#B1B1B1;">
-							<a href="/<? echo $pagename_tp; ?>">En</a>
+						<div style="position:absolute;top:28px;right:0;font-size:14px;color:#ffffff;">
+							<a href="/<? echo $pagename_tp; ?>" class="region">En</a>
 						</div>
 
 					</div>

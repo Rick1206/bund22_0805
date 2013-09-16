@@ -15,6 +15,7 @@ $param = "title_".$curlang." as name,description_".$curlang." as description , e
 $infoquery = $db->query("SELECT ".$param." FROM ".$ros->table('enticement').$where);
 $infoB = $db->fetch_array($infoquery);
 $eid = $infoB['enticement_id'];
+
 ?>
 <script type="text/javascript" src="js/sea.js"></script>
 <style type="text/css">
@@ -28,7 +29,8 @@ $eid = $infoB['enticement_id'];
         	<?php 
         		$phowhere = " WHERE enticement_id = '".$eid."'";
 				$phoparam = "*";
-				$phoquery = $db->query("SELECT ".$phoparam." FROM ".$ros->table('enticement_photo').$phowhere);
+				$order = "ORDER BY orderby";
+				$phoquery = $db->query("SELECT ".$phoparam." FROM ".$ros->table('enticement_photo').$phowhere.$order);
 				while($phoThisB = $db->fetch_array($phoquery)) {
 			?>
             <li><img src="<?php echo "http://www.bund22.com/uploadfiles/enticement_photo/".$phoThisB['photo']; ?>" alt="" width="750" height="500"></li>
